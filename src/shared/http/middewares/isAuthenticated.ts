@@ -16,6 +16,9 @@ export default function isAuthenticated(
 
     try {
       const decodedToken = verify(token, authConfig.jwt.secret)
+
+      console.log(decodedToken)
+
       return next()
 
     } catch (error) {
