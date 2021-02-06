@@ -42,7 +42,6 @@ export class CreateUserTokens1612636298646 implements MigrationInterface {
             columnNames: ['user_id'],
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
-
           }
         ]
       }))
