@@ -23,7 +23,9 @@ export class ProductRepository extends Repository<Product> {
     const productsIds = products.map(product => product.id)
 
     const existsProducts = await this.find({
-      where: In(productsIds)
+      where: {
+        id: In(productsIds)
+      }
 
     })
 
