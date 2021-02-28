@@ -13,7 +13,7 @@ interface IProducts {
 interface IRequest {
   customer_id: string;
   products: IProducts[];
-  quantity: number;
+  quantity?: number;
 }
 
 class CreateOrderService {
